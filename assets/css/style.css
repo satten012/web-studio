@@ -27,22 +27,61 @@ b{
     background-color: rgb(43, 93, 105);
     justify-content: space-around;
     align-items: center;
+    color: rgb(13, 0, 154);
  
 
 }
 
-.skill{
-    
+.skill1{
+    border-radius: 12px;
+    border: 2px solid #00b0b0;
+   background-image: url(/le-buzz-studio-KiEiI2b9GkU-unsplash.jpg);
+   background-size:500px 400px; 
    
     font-family: 'Oswald', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 500px;
+    height: 400px;
     background-color: rgb(237, 217, 32);
     font-size: 42px;
 }
+
+.skill2{
+     border-radius: 12px;
+    border: 2px solid #00b0b0;
+   background-image: url(/igor-miske-Px3iBXV-4TU-unsplash.jpg);
+   background-size:500px 400px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(237, 217, 32);
+    font-size: 42px;
+}
+
+
+
+.skill3{
+     border-radius: 12px;
+    border: 2px solid #00b0b0;  
+   background-image: url(/igor-miske-JVSgcV8_vb4-unsplash.jpg);
+   background-size:500px 400px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(237, 217, 32);
+    font-size: 42px;
+}
+
+
+
 
 
 
