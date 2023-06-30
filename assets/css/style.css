@@ -5,8 +5,17 @@ body {
 
 /* Ми вміємо */
 
+.skills{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: blue;
+}
 
 
+
+
+/* Ми вміємо */
 
 
 /* about us */
