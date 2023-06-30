@@ -46,6 +46,12 @@ body {
     font-weight: bold;
 }
 
+.num-about-row {
+    display: flex;
+    font-size: 20px;
+    align-items: baseline;
+}
+
 
 /* footer */
 
