@@ -69,16 +69,22 @@ img{
 .main__img{
     box-sizing: border-box;
     max-width: 500px;
+
+    transform: scale(0);
+    transition: all 1.5s ease 0s;
 }
 .main__img__first {
     border-radius: 50%;
 }
+.main__img._active{
+    transform: scale(1);
+}
 .text__first{
     transform: translate(0px, 120%);
     opacity: 0;
-    transform: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
 }
-.text__first ._active{
+.text__first._active{
     transform: translate(0px, 0%);
     opacity: 1;
 }
@@ -86,6 +92,15 @@ img{
     font-size: 64px;
     font-weight: bold;
     line-height: 15px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.text__second._active{
+    transform: translate(0px, 100%);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
 }
 .main__colorword{
     color: rgb(189,1,19);
@@ -94,16 +109,15 @@ img{
 .text__third{
     font-size: 49px;
     font-weight: bold;
-}
-.main__btn{
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: rgb(2,13,55);
-    padding: 15px 35px 15px 35px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
 
+    transform: translate(0px, 90%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.text__third._active{
+    transform: translate(0px, 40%);
+    opacity: 1;
+    transition: all 0.8s ease 0.5s;
 }
 .main__btn:hover{
     border: 2px solid rgb(189,1,19);
