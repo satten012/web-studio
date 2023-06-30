@@ -88,25 +88,26 @@ b {
     justify-content: space-evenly;
     margin: 0 auto;
     width: 70%;
+    padding: 20px 0;
 }
 
 .ab-head-title {
     font-size: 30px;
     font-weight: bold;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 .about-content::before {
     content: '';
     padding: 1px;
-    width: 5%;
+    width: 40px;
     background-color: #ED4E31;
     display: block;
 }
 
 .ab-subtitle-text {
     font-size: 18px;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
 .about-content p {
@@ -155,7 +156,7 @@ b {
 .ab-column1-exp p,
 .ab-column2-product p,
 .ab-column3-clients p {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -207,6 +208,7 @@ b {
     /* color: #fff; */
     text-decoration: none;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .get-link:hover {
@@ -258,4 +260,57 @@ b {
 #footer-bottom {
     text-align: center;
     margin: 2px 0 0 0;
+}
+
+
+/* media */
+
+@media screen and (max-width: 500px) {
+    #aboutus {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ab-number {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+    }
+    .ab-column1-exp,
+    .ab-column2-product,
+    .ab-column3-clients {
+        padding: 5px 0;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #footer-middle {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cl1-ft-logo-img,
+    .cl2-ft-location,
+    .cl3-ft-callUs,
+    .cl4-ft-subscribe {
+        padding: 10px 0;
+        margin: 15px 0;
+    }
+    #footer-bottom {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #footer-top {
+        display: block;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .title-button-wrap {
+        margin: 20px 0;
+        padding: 10px 0;
+    }
 }
