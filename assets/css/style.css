@@ -29,13 +29,13 @@ b {
     background-color: rgb(43, 93, 105);
     justify-content: space-around;
     align-items: center;
-    color: rgb(13, 0, 154);
+    color: #ffffff;
 }
 
 .skill1 {
     border-radius: 12px;
     border: 2px solid #f443ad;
-    background-image: url('/le-buzz-studio-KiEiI2b9GkU-unsplash.jpg');
+    background-image: url('/bg1.png');
     background-size: 500px 400px;
     font-family: 'Oswald', sans-serif;
     display: flex;
@@ -50,7 +50,7 @@ b {
 .skill2 {
     border-radius: 12px;
     border: 2px solid #e63434;
-    background-image: url(/igor-miske-Px3iBXV-4TU-unsplash.jpg);
+    background-image: url(/bg2.png);
     background-size: 500px 400px;
     font-family: 'Oswald', sans-serif;
     display: flex;
@@ -65,7 +65,7 @@ b {
 .skill3 {
     border-radius: 12px;
     border: 2px solid #dc961d;
-    background-image: url(/igor-miske-JVSgcV8_vb4-unsplash.jpg);
+    background-image: url(/bg3.png);
     background-size: 500px 400px;
     font-family: 'Oswald', sans-serif;
     display: flex;
