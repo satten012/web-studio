@@ -12,7 +12,7 @@ window.addEventListener('scroll', function onScroll() {
             if (start == end) {
                 clearInterval(interval);
             }
-        }, 5);
+        }, 40);
     }
 });
 
@@ -30,7 +30,7 @@ window.addEventListener('scroll', function onScroll() {
             if (start2 == end2) {
                 clearInterval(interval2);
             }
-        }, 5);
+        }, 30);
     }
 });
 
@@ -48,6 +48,6 @@ window.addEventListener('scroll', function onScroll() {
             if (start3 == end3) {
                 clearInterval(interval3);
             }
-        }, 5);
+        }, 40);
     }
 });

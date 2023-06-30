@@ -3,17 +3,16 @@ body {
     margin: 0
 }
 
+
 /* Ми вміємо */
 
-.skills{
+.skills {
     display: flex;
     width: 100%;
     height: 700px;
     background-color: blue;
     font-size: 23px;
 }
-
-
 
 
 /* Ми вміємо */
@@ -26,12 +25,21 @@ body {
     justify-content: space-evenly;
     margin: 0 auto;
     width: 70%;
+    font-family: ;
 }
 
 .ab-head-title {
     font-size: 30px;
     font-weight: bold;
     margin: 0 0 10px 0;
+}
+
+.about-content::before {
+    content: '';
+    padding: 1px;
+    width: 5%;
+    background-color: #ED4E31;
+    display: block;
 }
 
 .ab-subtitle-text {
@@ -57,14 +65,50 @@ body {
 .num-yrs,
 .num-prod,
 .num-cl {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
+    z-index: 10;
 }
 
 .num-about-row {
     display: flex;
     font-size: 20px;
     align-items: baseline;
+    z-index: 10;
+}
+
+.num-about-row p {
+    z-index: 10;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ab-column1-exp,
+.ab-column2-product,
+.ab-column3-clients {
+    position: relative;
+    z-index: 10;
+}
+
+.ab-column1-exp p,
+.ab-column2-product p,
+.ab-column3-clients p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ab-column1-exp::before,
+.ab-column2-product::before,
+.ab-column3-clients::before {
+    content: '';
+    height: 10px;
+    width: 60px;
+    background-color: #ED4E31;
+    display: block;
+    position: absolute;
+    top: calc(38% - 2px);
+    left: 20px;
+    z-index: 1;
 }
 
 
