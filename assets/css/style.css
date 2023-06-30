@@ -119,10 +119,22 @@ img{
     opacity: 1;
     transition: all 0.8s ease 0.5s;
 }
+.main__btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(2,13,55);
+    padding: 15px 35px 15px 35px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+}
 .main__btn:hover{
     border: 2px solid rgb(189,1,19);
     background-color: rgb(189,1,19);
-
+    box-shadow: 0 3px 0px rgb(63, 1, 7);
+    cursor: pointer;
 }
 /*header+main  */
 
