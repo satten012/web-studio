@@ -51,3 +51,52 @@ window.addEventListener('scroll', function onScroll() {
         }, 40);
     }
 });
+const animItems = document.querySelectorAll('._animItems');
+if (animItems.length > 0) {
+  window.addEventListener('scroll', animOnScroll);
+  
+  function animOnScroll() {
+    const windowHeight = window.innerHeight;
+    const scrollY = window.scrollY;
+    
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+      let animItemPoint = windowHeight - windowHeight / animStart;
+      
+      if (animItemHeight > windowHeight) {
+        animItemPoint = windowHeight - windowHeight / animStart;
+      }
+      
+      if (scrollY > animItemOffset - animItemPoint && scrollY < animItemOffset + animItemHeight) {
+        animItem.classList.add('_active');
+      } else {
+        if(!animItem.classList.contains('_anim-no-hide')){
+            animItem.classList.remove('_active');
+        }
+        
+      }
+    }
+  }
+  
+  function offset(el) {
+    const rect = el.getBoundingClientRect();
+
+    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  
+    const offsetLeft = rect.x + scrollLeft;
+    const offsetTop = rect.y + scrollTop;
+  
+        return {
+            top: offsetTop,
+            left: offsetLeft,
+        };
+    }
+  setTimeout(() => {
+    animOnScroll();
+  }, 300);
+
+}
