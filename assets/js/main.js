@@ -52,6 +52,20 @@ window.addEventListener('scroll', function onScroll() {
     }
 });
 // анімація main, header
+function offset(el) {
+    const rect = el.getBoundingClientRect();
+
+    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  
+    const offsetLeft = rect.x + scrollLeft;
+    const offsetTop = rect.y + scrollTop;
+  
+        return {
+            top: offsetTop,
+            left: offsetLeft,
+        };
+    }
 const animItems = document.querySelectorAll('._animItems');
 if (animItems.length > 0) {
   window.addEventListener('scroll', animOnScroll);
@@ -77,27 +91,20 @@ if (animItems.length > 0) {
         if(!animItem.classList.contains('_anim-no-hide')){
             animItem.classList.remove('_active');
         }
-        
       }
     }
   }
-  
-  function offset(el) {
-    const rect = el.getBoundingClientRect();
-
-    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  
-    const offsetLeft = rect.x + scrollLeft;
-    const offsetTop = rect.y + scrollTop;
-  
-        return {
-            top: offsetTop,
-            left: offsetLeft,
-        };
-    }
   setTimeout(() => {
     animOnScroll();
   }, 300);
-
 }
+// const image = document.getElementById("main__imgId");
+// const images = ["./pexels-olia-danilevich-4974915-e1599053299951.jpg", "./about-us-img.jpg"];
+// let currentImage = 0;
+
+// function changeImage() {
+//   image.src = images[currentImage];
+//   currentImage = (currentImage + 1) % images.length;
+// }
+
+// setInterval(changeImage, 5000);

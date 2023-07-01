@@ -1,6 +1,7 @@
 html,
 body {
-    margin: 0
+    margin: 0;
+    /* scroll-behavior: smooth; */
 }
 
 
@@ -21,6 +22,7 @@ img{
 }
 .wrapper{
     /* background: linear-gradient(104deg, rgba(38,65,109,1) 0%, rgba(11,29,98,1) 33%, rgba(59,114,151,1) 100%); */
+    /* background: linear-gradient(0deg, rgba(27,94,112,1) 0%, rgba(2,13,55,1) 100%); */
     background-color: rgb(2,13,55);
     height: 100vh;
     padding: 15px 30px;
@@ -31,15 +33,20 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 45px;
-    margin-right: 45px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* margin-left: 45px;
+    margin-right: 45px; */
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: rgb(2,13,55);
     /* position: sticky;
     top: 0; */
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
+
 .haeader__logo{
     width: 100px;
     height: 64;
@@ -50,7 +57,9 @@ img{
     font-size: 16px;
     padding-right: 30px;
     padding-left: 14px;
+    transition-duration: 0.5s;
 }
+
 .haeader__nav:hover{
     color: rgb(189,1,19);
     cursor: pointer;
@@ -67,6 +76,7 @@ img{
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding-top: 60px;
     margin-top: 100px;
     margin-bottom: 150px;
 }
@@ -77,11 +87,13 @@ img{
     transform: scale(0);
     transition: all 1.5s ease 0s;
 }
+
 .main__img__first {
     border-radius: 50%;
 }
 .main__img._active{
     transform: scale(1);
+    transition-duration: 1s;
 }
 .text__first{
     transform: translate(0px, 120%);
@@ -117,6 +129,7 @@ img{
     transform: translate(0px, 90%);
     opacity: 0;
     transition: all 0.8s ease 0s;
+
 }
 .text__third._active{
     transform: translate(0px, 40%);
@@ -124,6 +137,7 @@ img{
     transition: all 0.8s ease 0.5s;
 }
 .main__btn{
+    margin-top: 20px;
     border: 2px solid white;
     border-radius: 10px;
     background-color: rgb(2,13,55);
