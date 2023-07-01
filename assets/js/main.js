@@ -51,6 +51,7 @@ window.addEventListener('scroll', function onScroll() {
         }, 40);
     }
 });
+// анімація main, header
 const animItems = document.querySelectorAll('._animItems');
 if (animItems.length > 0) {
   window.addEventListener('scroll', animOnScroll);
