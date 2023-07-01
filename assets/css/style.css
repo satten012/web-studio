@@ -82,7 +82,6 @@ img {
 .main__img {
     box-sizing: border-box;
     max-width: 500px;
-
     transform: scale(0);
     transition: all 1.5s ease 0s;
 }
@@ -90,25 +89,14 @@ img {
 .main__img__first {
     border-radius: 50%;
 }
-<<<<<<< HEAD
 
 .text__first {
-=======
-.main__img._active{
-    transform: scale(1);
-}
-.text__first{
->>>>>>> 256ebf8b7702539f5dea675acab4523ae7464927
     transform: translate(0px, 120%);
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
-<<<<<<< HEAD
 
 .text__first ._active {
-=======
-.text__first._active{
->>>>>>> 256ebf8b7702539f5dea675acab4523ae7464927
     transform: translate(0px, 0%);
     opacity: 1;
 }
@@ -117,12 +105,12 @@ img {
     font-size: 64px;
     font-weight: bold;
     line-height: 15px;
-
     transform: translate(0px, 120%);
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
-.text__second._active{
+
+.text__second._active {
     transform: translate(0px, 100%);
     opacity: 1;
     transition: all 0.8s ease 0.4s;
@@ -135,12 +123,12 @@ img {
 .text__third {
     font-size: 49px;
     font-weight: bold;
-
     transform: translate(0px, 90%);
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
-.text__third._active{
+
+.text__third._active {
     transform: translate(0px, 40%);
     opacity: 1;
     transition: all 0.8s ease 0.5s;
@@ -154,32 +142,18 @@ img {
     color: white;
     font-size: 14px;
     font-weight: bold;
-<<<<<<< HEAD
 }
 
 .main__btn:hover {
     border: 2px solid rgb(189, 1, 19);
     background-color: rgb(189, 1, 19);
-=======
-    transition-duration: 0.5s;
-
-}
-.main__btn:hover{
-    border: 2px solid rgb(189,1,19);
-    background-color: rgb(189,1,19);
-    box-shadow: 0 3px 0px rgb(63, 1, 7);
-    cursor: pointer;
->>>>>>> 256ebf8b7702539f5dea675acab4523ae7464927
 }
 
 
 /*header+main  */
 
 
-<<<<<<< HEAD
 /* Ми вміємо */
-=======
->>>>>>> 256ebf8b7702539f5dea675acab4523ae7464927
 
 
 /* Ми вміємо */
@@ -209,25 +183,23 @@ b {
     color: #ffffff;
 }
 
-.skill1:hover{
+.skill1:hover {
     cursor: pointer;
     opacity: 80%;
     color: #e63434;
-
 }
-.skill2:hover{
+
+.skill2:hover {
     cursor: pointer;
     opacity: 80%;
     color: #e63434;
-
 }
-.skill3:hover{
+
+.skill3:hover {
     cursor: pointer;
     opacity: 80%;
     color: #e63434;
-
 }
-
 
 .skill1 {
     border-radius: 24px;
