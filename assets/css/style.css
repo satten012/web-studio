@@ -162,13 +162,34 @@ b {
     width: 100%;
     height: 800px;
     background-color: rgb(43, 93, 105);
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     color: #ffffff;
 }
 
+.skill1:hover{
+    cursor: pointer;
+    opacity: 80%;
+    color: #e63434;
+
+}
+.skill2:hover{
+    cursor: pointer;
+    opacity: 80%;
+    color: #e63434;
+
+}
+.skill3:hover{
+    cursor: pointer;
+    opacity: 80%;
+    color: #e63434;
+
+}
+
+
 .skill1 {
-    border-radius: 12px;
+    border-radius: 24px;
     border: 2px solid #f443ad;
     background-image: url('/bg1.png');
     background-size: 400px 500px;
@@ -180,11 +201,11 @@ b {
     width: 400px;
     height: 500px;
     background-color: rgb(237, 217, 32);
-    font-size: 42px;
+    font-size: 36px;
 }
 
 .skill2 {
-    border-radius: 12px;
+    border-radius: 24px;
     border: 2px solid #e63434;
     background-image: url(/bg2.png);
     background-size: 400px 500px;
@@ -196,11 +217,11 @@ b {
     width: 400px;
     height: 500px;
     background-color: rgb(237, 217, 32);
-    font-size: 42px;
+    font-size: 36px;
 }
 
 .skill3 {
-    border-radius: 12px;
+    border-radius: 24px;
     border: 2px solid #dc961d;
     background-image: url(/bg3.png);
     background-size: 400px 500px;
@@ -212,7 +233,7 @@ b {
     width: 400px;
     height: 500px;
     background-color: rgb(237, 217, 32);
-    font-size: 42px;
+    font-size: 36px;
 }
 
 
