@@ -33,13 +33,9 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* margin-left: 45px;
-    margin-right: 45px; */
     padding-left: 60px;
     padding-right: 60px;
     background-color: rgb(2,13,55);
-    /* position: sticky;
-    top: 0; */
     position: fixed;
     top: 0;
     left: 0;
@@ -87,39 +83,42 @@ img{
     box-sizing: border-box;
     max-width: 500px;
 
-    transform: scale(0);
-    transition: all 1.5s ease 0s;
+    transform: translate(120px, 0%);
+    opacity: 0;
+    transition: all 0.5s ease-in 0s;
 }
 
 .main__img__first {
     border-radius: 50%;
 }
 .main__img._active{
-    transform: scale(1);
+    transform: translate(0px, 0%);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
     transition-duration: 1s;
 }
 .text__first{
-    transform: translate(0px, 120%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
 }
 .text__first._active{
-    transform: translate(0px, 0%);
     opacity: 1;
+    transition-duration: 1.5s;
 }
 .text__second{
     font-size: 64px;
     font-weight: bold;
     line-height: 15px;
 
-    transform: translate(-50px, 120%);
+    /* transform-origin: 1% 1% 0px; */
+
+    transform: translate(-120px, 120%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: all 0.5s ease-in 0s;
 }
 .text__second._active{
-    transform: translate(0px, 100%);
+    transform: translate(0px, 0%);
     opacity: 1;
-    transition: all 0.8s ease 0.4s;
+    transition: all 0.5s ease 0.4s;
 }
 .main__colorword{
     color: rgb(189,1,19);
@@ -135,7 +134,7 @@ img{
 
 }
 .text__third._active{
-    transform: translate(0px, 40%);
+    transform: translate(0px, 0%);
     opacity: 1;
     transition: all 0.8s ease 0.5s;
 }
@@ -150,6 +149,16 @@ img{
     font-weight: bold;
     transition-duration: 0.5s;
 
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+
+}
+
+.main__btn._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+    transition: all 1s ease 0.5s;
 }
 .main__btn:hover{
     border: 2px solid rgb(189,1,19);
@@ -560,10 +569,7 @@ footer {
         justify-content: center;
         align-content: center;
     }
-    body {
-        -webkit-tap-highlight-color: transparent;
-      }
-      
+    
       #menu_checkbox {
         display: none;
       }
