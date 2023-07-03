@@ -93,7 +93,6 @@ img {
     transform: translate(120px, 0%);
     opacity: 0;
     transition: all 0.5s ease-in 0s;
-
 }
 
 .main__img__first {
@@ -153,8 +152,6 @@ img {
     color: white;
     font-size: 14px;
     font-weight: bold;
-    transition-duration: 0.5s;
-
     transform: translate(0px, 50%);
     opacity: 0;
     transition: all 0.8s ease 0s;
@@ -622,9 +619,6 @@ footer {
         right: 0;
         width: 60px;
     }
-    /* #menu_checkbox:checked + label:before {
-        background-color: #4caf50;
-      } */
     #menu_checkbox:checked+label div:first-child {
         top: -6px;
         transform: rotateZ(45deg);
