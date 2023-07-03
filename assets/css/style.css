@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -602,6 +608,88 @@ footer {
         margin: 20px 0;
     }
 }
+
+/* портфолио */
+.portfolio{
+    width: 100vw;
+    height: min-content;
+    background-color: white;
+}
+
+.portfolioContent{
+    max-width: 1240px;
+    border: 1px solid #000;
+    margin: auto;
+}
+.portfolioContent_Description{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.portfolioContent_DescriptionTitle,
+.portfolioContent_DescriptionText{
+    margin-top: 125px;
+    width: 50%;
+}
+
+.portfolioContent_DescriptionTitleLine{
+    width: 50px;
+    margin-bottom: 20px;
+    border-top: 2px solid #ed4e31;
+}
+
+.portfolioContent_DescriptionTitleLineCaption{
+    font-size: 42px;
+    font-family: 'Prompt', sans-serif;;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 10px;
+}
+
+.portfolioContent_DescriptionTitleSubtitle{
+    line-height: 28px;
+    font-family: 'Prompt', sans-serif;;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.portfolioContent_DescriptionTextSlogan{
+    max-width: 605px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 26px;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Prompt', sans-serif;;
+}
+
+.portfolioContent_Examples{
+    display: flex;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.child {
+    background-color: #444;
+    color: #999;
+/*     text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: 4px;
+    line-height: 50px;
+    font-weight: 700; */
+/*     min-width: 394px; */
+min-width: 375px;
+    min-height: 357px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
 @media screen and (max-width: 770px) {
     /* Header main */
     .header_nav_container {
