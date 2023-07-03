@@ -122,7 +122,7 @@ window.addEventListener('resize', function(){
         }
 })
 
-/* ффф */
+/* ффыфафыаф */
 
 
 /* Portfolio */
