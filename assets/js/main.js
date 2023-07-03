@@ -122,5 +122,7 @@ window.addEventListener('resize', function(){
         }
 })
 
+/* ффф */
+
 
 /* Portfolio */
