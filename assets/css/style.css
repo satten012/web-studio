@@ -647,58 +647,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .text__second {
-        font-size: 42px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #footer-top {
-        display: block;
-        text-align: center;
-        width: 95%;
-        margin: 0 auto;
-    }
-    .title-button-wrap {
-        margin: 20px 0;
-        padding: 10px 0;
-    }
-    #aboutus {
-        display: block;
-        width: fit-content;
-        padding: 30px 0;
-    }
-    .img-us {
-        min-width: 280px;
-    }
-    /* main */
-    .main__img {
-        max-width: 350px;
-    }
-    .text__second {
-        font-size: 5vw;
-    }
-    .text__third {
-        font-size: 31px;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    #footer-middle {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .cl1-ft-logo-img,
-    .cl2-ft-location,
-    .cl3-ft-callUs,
-    .cl4-ft-subscribe {
-        padding: 15px 0;
-        margin: 20px 0;
-    }
-}
-
 /* портфолио */
 .portfolio{
     width: 100vw;
@@ -767,15 +715,125 @@ margin-top: 40px;
 .child {
     background-color: #444;
     color: #999;
-/*     text-align: center;
-    width: 200px;
-    height: 100px;
-    margin: 4px;
-    line-height: 50px;
-    font-weight: 700; */
-/*     min-width: 394px; */
-min-width: 375px;
+    min-width: 375px;
     min-height: 357px;
     margin: auto;
     margin-bottom: 30px;
   }
+
+ /* portfolio */ 
+
+ @media screen and (max-width: 1400px) {
+    .portfolioContent_DescriptionTitle{
+        margin-left: 25px;
+    }
+    .portfolioContent_DescriptionTextSlogan{
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    #footer-middle {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cl1-ft-logo-img,
+    .cl2-ft-location,
+    .cl3-ft-callUs,
+    .cl4-ft-subscribe {
+        padding: 15px 0;
+        margin: 20px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #footer-top {
+        display: block;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .title-button-wrap {
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+    #aboutus {
+        display: block;
+        width: fit-content;
+        padding: 30px 0;
+    }
+    .img-us {
+        min-width: 280px;
+    }
+    /* main */
+    .main__img {
+        max-width: 350px;
+    }
+    .text__second {
+        font-size: 5vw;
+    }
+    .text__third {
+        font-size: 31px;
+    }
+    /* portfolio */
+    .child{
+        width: 45%;
+        background-color: rebeccapurple;
+    }
+    /* portfolio */
+}
+
+
+@media screen and (max-width: 900px) {
+    .text__second {
+        font-size: 42px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+   .portfolioContent_Description{
+       flex-direction: column;
+   }
+   .portfolioContent_DescriptionTitle,
+   .portfolioContent_DescriptionText{
+       width: 100%;
+   }
+   .portfolioContent_DescriptionText{
+       text-align: center;
+       margin: auto;
+       margin-top: 25px;
+   }
+   .portfolioContent_DescriptionTextSlogan{
+       width: 90%;
+       margin: auto;
+   }
+   .portfolioContent_DescriptionTitleSubtitle,
+   .portfolioContent_DescriptionTitleLineCaption{
+       text-align: center;
+   }
+   .portfolioContent_DescriptionTitleLine{
+       width: 105px;
+       margin-bottom: 20px;
+       border-top: 2px solid #ed4e31;
+       margin: auto;
+       margin-bottom: 20px;
+   }
+   .portfolioContent_DescriptionTitle{
+       margin-left: 0;
+   }
+   .child{
+       width: 80%;
+   }
+
+}
+
+@media screen and (max-width: 576px) {
+    .child{
+        width: 90%;
+    }
+}
+
+
