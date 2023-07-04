@@ -208,6 +208,8 @@ body._lock{
 /* Ми вміємо */
 
 .skills_text {
+    background-color: #251515;
+    color: rgba(255, 255, 255, 0.887);
     font-size: 42px;
     text-align: center;
     font-family: 'Russo One', sans-serif;
@@ -219,13 +221,14 @@ b {
 }
 
 .skills {
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 52%, rgba(252, 176, 69, 1) 100%);
+    /* background: rgb(131, 58, 180); */
+    /* background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 52%, rgba(252, 176, 69, 1) 100%); */
+    background-color: #251515;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 800px;
-    background-color: rgb(43, 93, 105);
+    height: 700px;
+    /* background-color: rgb(43, 93, 105); */
     justify-content: center;
     gap: 50px;
     align-items: center;
@@ -298,6 +301,13 @@ b {
     font-size: 36px;
 }
 
+
+
+@media screen and (max-width: 1100px){
+    .skills{
+        height: 1600px;
+    }
+}
 
 /* Ми вміємо */
 
@@ -645,6 +655,54 @@ margin-top: 40px;
     margin: auto;
     margin-bottom: 30px;
   }
+
+.child:hover{
+    animation: boxAnimation 1.5s forwards;
+}
+
+.childImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@keyframes boxAnimation {
+    to {
+        background-color: blue;
+        transform: rotate3d(1, 0, -1, 360deg);
+        -webkit-box-shadow: 54px 31px 5px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 54px 31px 5px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 54px 31px 5px -3px rgba(0, 0, 0, 0.75);
+        width: 400px!important;
+    }
+}
+
+/* .child {
+    background-color: #444;
+    color: #999;
+    min-width: 375px;
+    min-height: 357px;
+    margin: auto;
+    margin-bottom: 30px;
+    transition: background-color 2s, transform 2s;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75);
+}
+
+.child:hover{
+    background-color: blue;
+    transform: rotate3d(1, 0, -1, 360deg);
+    -webkit-box-shadow: 54px 31px 5px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 54px 31px 5px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 54px 31px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+.childImg{
+    max-width: 375px;
+} */
 
  /* portfolio */ 
 

@@ -132,7 +132,7 @@ if (menuBurger) {
 }
 
 /* Portfolio */
-window.addEventListener('resize', function(){
+/* window.addEventListener('resize', function(){
     const screenWidth = window.screen.width
     const portfolioContentExamples = document.querySelector(".portfolioContent_Examples")
         if (screenWidth < 1000){
@@ -142,7 +142,7 @@ window.addEventListener('resize', function(){
         else if (screenWidth > 1000){
             portfolioContentExamples.classList.add("portfolioContent_Examples")
         }
-})
+}) */
 
 /* ффыфафыаф */
 
