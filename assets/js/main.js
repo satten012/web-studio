@@ -109,6 +109,28 @@ if (animItems.length > 0) {
 
 // setInterval(changeImage, 5000);
 
+//Menu Burger
+
+const menuBurger = document.querySelector('#menu_checkbox');
+if (menuBurger) {
+  const menuBody = document.querySelector('.header_nav_container');
+  console.log(menuBody);
+  
+  menuBurger.addEventListener('change', function (e) {
+    document.body.classList.toggle('_lock');
+    menuBody.classList.toggle('_activated', this.checked);
+  });
+  
+  const link = document.querySelector('.header__nav');
+  console.log(link);
+  
+  link.addEventListener('click', function (event) {
+    menuBurger.checked = false; // Знімаємо позначку з чекбокса
+    document.body.classList.remove('_lock');
+    menuBody.classList.remove('_activated');
+  });
+}
+
 /* Portfolio */
 window.addEventListener('resize', function(){
     const screenWidth = window.screen.width

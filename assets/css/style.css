@@ -28,7 +28,9 @@ img {
     vertical-align: top;
     height: auto;
 }
-
+body._lock{
+    overflow: hidden;
+}
 .wrapper {
     /* background: linear-gradient(104deg, rgba(38,65,109,1) 0%, rgba(11,29,98,1) 33%, rgba(59,114,151,1) 100%); */
     /* background: linear-gradient(0deg, rgba(27,94,112,1) 0%, rgba(2,13,55,1) 100%); */
@@ -54,16 +56,17 @@ img {
     z-index: 9999;
 }
 
-.haeader__logo {
+.header__logo {
     max-width: 100px;
     max-height: 64;
+    z-index: 3;
 }
 
 .header__burger {
     display: none;
 }
 
-.haeader__nav {
+.header__nav {
     color: white;
     font-size: 16px;
     padding-right: 30px;
@@ -71,7 +74,7 @@ img {
     transition-duration: 0.5s;
 }
 
-.haeader__nav:hover {
+.header__nav:hover {
     color: rgb(189, 1, 19);
     cursor: pointer;
 }
@@ -761,8 +764,40 @@ margin-top: 40px;
 
 @media screen and (max-width: 770px) {
     /* Header main */
-    .header_nav_container {
-        display: none;
+    .header_nav_container {     
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(2,13,55);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .header_nav_container._activated{
+        left: 0;
+    }
+    .header_nav_container::before{
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        height: 100px;
+        background-color:rgb(2,13,55);
+        z-index: 2;
+    }
+    .header_nav_container ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    .header__nav{
+        font-size: 18px;
+        line-height: 30px;
+        padding: 15px 0px;
     }
     .header__burger {
         display: block;
@@ -813,6 +848,7 @@ margin-top: 40px;
         margin-bottom: 12px;
         transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
         border-radius: 2px;
+        z-index: 4;
     }
     label div:first-child {
         transform-origin: 0;
@@ -839,4 +875,12 @@ margin-top: 40px;
         right: 13px;
         transform: rotateZ(-45deg);
     }
+}
+
+@media screen and (max-width: 450px){
+    .header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 }
