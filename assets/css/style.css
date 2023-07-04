@@ -83,14 +83,12 @@ img {
 }
 
 .main__container {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding-top: 60px;
-    margin-top: 100px;
-    margin-bottom: 150px;
 }
 
 .main__img {
@@ -114,6 +112,7 @@ img {
 .main__text__block{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .text__first{
@@ -780,8 +779,6 @@ margin-top: 40px;
         display: none;
     }
     .main__container {
-        margin-top: 50px;
-        margin-bottom: 50px;
         justify-content: center;
         text-align: center;
     }
