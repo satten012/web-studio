@@ -41,6 +41,7 @@ body._lock{
 }
 
 .header {
+    width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -58,7 +59,6 @@ body._lock{
 
 .header__logo {
     max-width: 100px;
-    max-height: 64;
     z-index: 3;
 }
 
@@ -83,6 +83,9 @@ body._lock{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.mobile_nav {
+    display: none;
 }
 
 .main__container {
@@ -822,6 +825,14 @@ margin-top: 40px;
 
 @media screen and (max-width: 770px) {
     /* Header main */
+    .header{
+        height: 80px;
+    }
+    .header__logo {
+        max-width: 80px;
+        overflow: hidden;
+    }
+
     .header_nav_container {     
         position: fixed;
         top: 0;
@@ -829,8 +840,8 @@ margin-top: 40px;
         width: 100%;
         height: 100%;
         background-color: rgb(2,13,55);
-        padding: 100px 30px 30px 30px;
-        transition: left 0.3s ease 0s;
+        padding: 100px 30px 30px 60px;
+        transition: left 0.5s ease 0s;
         overflow: auto;
     }
     .header_nav_container._activated{
@@ -842,7 +853,7 @@ margin-top: 40px;
         width: 100%;
         top: 0px;
         left: 0px;
-        height: 100px;
+        height: 80px;
         background-color:rgb(2,13,55);
         z-index: 2;
     }
@@ -850,7 +861,6 @@ margin-top: 40px;
         display: flex;
         flex-direction: column;
         padding-top: 50px;
-        padding-left: 30px;
     }
     .header__nav{
         font-size: 18px;
@@ -933,6 +943,42 @@ margin-top: 40px;
         right: 13px;
         transform: rotateZ(-45deg);
     }
+    .mobile_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px 0px 0px 0px;
+        font-size: 16px;
+        line-height: 27px;
+        color: white;
+    }
+    .mobile_nav img {
+        max-width: 100%;
+    
+    }
+    li.mobile_nav__contact{
+        margin-bottom: 10px;
+    }
+    .mobile_nav__contact img {
+        max-width: 26px;
+    }
+    .mobile_nav__text{
+        padding-left: 15px;
+    }
+    ul.mobile_nav__socialPages {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+    .mobile_nav__socialPages img{
+        max-width: 18px;
+        margin-right: 25px;
+    }
+    .autorized {
+        color: #000;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -940,5 +986,8 @@ margin-top: 40px;
         padding-left: 30px;
         padding-right: 30px;
     }
+    .header_nav_container {     
+        padding: 60px 30px 30px 30px;
 
+    }
 }
