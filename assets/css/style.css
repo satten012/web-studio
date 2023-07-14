@@ -211,11 +211,15 @@ body._lock{
 /* Ми вміємо */
 
 .skills_text {
-    background-color: #251515;
+    background-color: white;
     color: rgba(255, 255, 255, 0.887);
     font-size: 42px;
     text-align: center;
     font-family: 'Russo One', sans-serif;
+}
+
+.skills_text p{
+    color: #000;
 }
 
 b {
@@ -226,7 +230,7 @@ b {
 .skills {
     /* background: rgb(131, 58, 180); */
     /* background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 52%, rgba(252, 176, 69, 1) 100%); */
-    background-color: #251515;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -241,19 +245,19 @@ b {
 .skill1:hover {
     cursor: pointer;
     opacity: 80%;
-    color: #e63434;
+    color: #000000;
 }
 
 .skill2:hover {
     cursor: pointer;
     opacity: 80%;
-    color: #e63434;
+    color: #000;
 }
 
 .skill3:hover {
     cursor: pointer;
     opacity: 80%;
-    color: #e63434;
+    color: #000;
 }
 
 .skill1 {
