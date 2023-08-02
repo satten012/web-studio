@@ -51,7 +51,7 @@ window.addEventListener('scroll', function onScroll() {
         }, 40);
     }
 });
-// анімація main, header
+// animation main, header
 function offset(el) {
     const rect = el.getBoundingClientRect();
 
@@ -98,6 +98,42 @@ if (animItems.length > 0) {
     animOnScroll();
   }, 300);
 }
+//moving image
+window.onload = function () {
+  const parallaxZone = document.querySelector('.main__container');
+  if(parallaxZone){
+    const imgContainar = document.querySelector('.main__img');
+    const imgFirst = document.querySelector('.main__img__first');
+
+    const forImg = 20;
+    const speed = 0.05;
+    let positionX = 0;
+    let positionY = 0; 
+    let cordXprocent = 0;
+    let cordYprocent = 0;
+
+    function setMouseMoveImg(){
+      const distX = cordXprocent - positionX;
+      const distY = cordYprocent - positionY;
+
+      positionX = positionX + (distX * speed);
+      positionY = positionY + (distY * speed);
+      imgFirst.style.cssText = `transform: translate(${positionX/forImg}%, ${positionY/forImg}%);`;
+      requestAnimationFrame(setMouseMoveImg);
+    }
+    setMouseMoveImg();
+    parallaxZone.addEventListener('mousemove', function(e){
+      const parallaxZoneWidth = parallaxZone.offsetWidth;
+      const parallaxZoneHeight = parallaxZone.offsetHeight;
+
+      const coordX = e.pageX - parallaxZoneWidth / 2;
+      const coordY = e.pageY - parallaxZoneHeight / 2;
+
+      cordXprocent = coordX / parallaxZoneWidth * 100;
+      cordYprocent = coordY / parallaxZoneHeight * 100;
+    })
+  }
+}
 // const image = document.getElementById("main__imgId");
 // const images = ["./pexels-olia-danilevich-4974915-e1599053299951.jpg", "./about-us-img.jpg"];
 // let currentImage = 0;
@@ -114,7 +150,6 @@ if (animItems.length > 0) {
 const menuBurger = document.querySelector('#menu_checkbox');
 if (menuBurger) {
   const menuBody = document.querySelector('.header_nav_container');
-  console.log(menuBody);
   
   menuBurger.addEventListener('change', function (e) {
     document.body.classList.toggle('_lock');
@@ -122,7 +157,6 @@ if (menuBurger) {
   });
   
   const link = document.querySelector('.header__nav');
-  console.log(link);
   
   link.addEventListener('click', function (event) {
     menuBurger.checked = false; // Знімаємо позначку з чекбокса
